@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/master.css">
+    <title>More Educations</title>
+</head>
+<body>
+
+    <div class="container">
+        <a href="../index.html">Get Back</a>
+
+        <h1>Certifications</h1>
+
+        <div class="images-container">
+
+            <div class="image"><img src="../assets/html-pic.jpeg" alt="image not found"></div>
+            <div class="image"><img src="../assets/js-pic.jpeg" alt="image not found"></div>
+            <div class="image"><img src="../assets/c-sharp.png" alt="image not found"></div>
+            <div class="image"><img src="../assets/Eng-pic.jpeg" alt="image not found"></div>
+            <div class="image"><img src="../assets/time-mangement-pic.png" alt="image not found"></div>
+            <div class="image"><img src="../assets/project-mangement-pic.png" alt="image not found"></div>
+        </div>
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="../assets/html-pic.jpeg" alt="image not found">
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.image-container img').forEach(Image =>{
+            Image.onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src =image.getAttribute('src');
+            }
+        });
+
+        // document.querySelector('.popup-image span').onclick = () =>{
+        //     document.querySelector('.popup-image').style.display = 'none';
+        // }
+    </script>
+</body>
+</html>
